@@ -1,0 +1,56 @@
+.homeSection {
+  .container {
+    max-width: 1140px;
+    .fullHeight {
+      min-height: 100vh;
+      .leftCol {
+        .leftBox {
+          padding-top: 200px;
+
+          h5 {
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0 0 20px;
+          }
+          h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1;
+            margin: 0 0 15px;
+          }
+          h3 {
+            font-size: 1.5rem;
+            line-height: 1.7;
+          }
+          p {
+            max-width: 450px;
+            margin-bottom: 1rem;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .homeImg {
+    background-image: url(../../../public/assets/homeIng.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50vw;
+    &::after {
+      background: $aqua;
+      border-radius: 50%;
+      bottom: -20vh;
+      content: "";
+      height: 120vh;
+      position: absolute;
+      right: -20vh;
+      width: 120vh;
+      z-index: -1;
+    }
+  }
+}
